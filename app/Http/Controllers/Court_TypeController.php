@@ -14,8 +14,8 @@ class Court_TypeController extends Controller
     public function index()
     {
         $types = Court_Type::all();
-        return $types;
-        return view('mcourt_type');
+        // return $types;
+        return view('mcourt_type', compact('types'));
     }
 
     public function store()

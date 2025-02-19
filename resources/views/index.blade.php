@@ -24,10 +24,10 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="rumah" id="rumah" class="nav-link text-white active"><i class="bi bi-house-door"></i> Home</a>
+                    <a href="court" id="rumah" class="nav-link text-white"><i class="bi bi-house-door"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="projek" id="project" class="nav-link text-white"><i class="bi bi-journal"></i> Master Project</a>
+                    <a href="court-type" id="project" class="nav-link text-white"><i class="bi bi-journal"></i> Master Project</a>
                 </li>
                 <li class="nav-item">
                     <a href="servis" id="Service" class="nav-link text-white"><i class="bi bi-box-seam"></i> Master Service</a>

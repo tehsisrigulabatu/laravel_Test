@@ -9,19 +9,30 @@
         <table class="table">
             <tr>
                 <th>No</th>
-                <th>Court Type Id</th>
+                <th>Court Type</th>
                 <th>Name</th>
+                <th>Price</th>
                 <th>Action</th>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+            @forelse ($courts as $court)
+                <td>{{$loop->iteration}}</td>
+                <td>{{$court->court__type_id}}</td>
+                <td>{{$court->name}}</td>
+                <td>{{$court->price}}</td>
+                
                 <td>
                     <a class="btn btn-warning" href="">edit</a>
                     <a class="btn btn-danger" href="">delete</a>
                 </td>
             </tr>
+            @empty
+                <div class="alert alert-danger">
+                    Data not found
+
+                </div>
+            @endforelse
+                
         </table>
     </div>
 

@@ -56,7 +56,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('mproject');
 // });
 
-Route::get('/court-type', [Court_TypeController::class, 'index']);
+Route::get('court-type', [Court_TypeController::class, 'index']);
 Route::post('/court-type', [Court_TypeController::class, 'store']);
 
 Route::resource('court', CourtController::class);
