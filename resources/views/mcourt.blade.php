@@ -17,7 +17,7 @@
             <tr>
             @forelse ($courts as $court)
                 <td>{{$loop->iteration}}</td>
-                <td>{{$court->court__type_id}}</td>
+                <td>{{$court->type->name}}</td>
                 <td>{{$court->name}}</td>
                 <td>{{$court->price}}</td>
                 
